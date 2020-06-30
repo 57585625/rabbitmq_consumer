@@ -1,0 +1,15 @@
+server:
+  port: 8099
+  tomcat:
+    uri-encoding: utf-8
+
+#\u914D\u7F6Erabbit\u8FDE\u63A5\u53C2\u6570
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+          acknowledge-mode:  manual
